@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_history_app/pages/homePage.dart';
+import 'package:the_history_app/pages/firstPage.dart';
 
 void main() {
   runApp(const MyApp());
