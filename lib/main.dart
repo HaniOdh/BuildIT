@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_history_app/pages/firstPage.dart';
+import 'package:the_history_app/pages/map_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +13,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstPage(),
+      home: MapPage(),
     );
   }
 }
