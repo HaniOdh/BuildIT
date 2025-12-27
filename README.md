@@ -6,7 +6,7 @@
 
 ## Table of Contents
 - [App Description](#app-description)
-- [Concept Deep Dive: Isolates & Asynch queues](#concept-deep-dive-isolates-asynch-queues)
+- [Concept Deep Dive: Isolates & Asynch queues](#concept-deep-dive-isolates--asynch-queues)
 - [System Overview](#system-overview)
 - [Architecture Diagrams](#architecture-diagrams)
 - [Internal System Workflow](#internal-system-workflow)
