@@ -1,4 +1,4 @@
-![Project Image](C:\Users\kuki\Downloads\Historia.png)
+![Project Image](Historia.png)
 
 
 
