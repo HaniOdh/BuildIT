@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:the_history_app/pages/firstPage.dart';
 import 'package:the_history_app/pages/map_page.dart';
+import 'package:the_history_app/pages/map_page_isolates.dart';
+
 
 
 void main() {
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MapPage(),
+      home: MapPageIsolates(),
     );
   }
 }
