@@ -18,6 +18,7 @@
 
 ---
 ## App Description
+Users explore content by selecting a geographical region on an interactive map and a corresponding time period, after which relevant historical events and characters are presented
 
 ---
 
@@ -54,9 +55,31 @@
 
 ## System Overview
 
+The application is a mobile, client–server system composed of a Flutter-based client and a Django-based backend
+
+The client is responsible for user interaction and data presentation, while the backend handles data storage and querying. The backend relies on a relational database to persist structured historical data related to events and people
+
+The client communicates with the backend to request data, and the backend responds by providing the relevant records from the database. This architecture ensures a clear separation between presentation, data processing, and data management layers
+
 ---
 
 ## Architecture Diagrams
+### High Level Architecture Diagram
+```mermaid
+flowchart LR
+    User[User]
+
+    MobileApp[Mobile App - Flutter]
+    Backend[Backend Server - Django]
+    DB[(Database)]
+
+    User --> MobileApp
+
+    MobileApp -->|HTTPS Requests| Backend
+    Backend -->|Responses| MobileApp
+
+    Backend -->|Read Write| DB
+```
 
 ---
 
