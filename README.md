@@ -80,7 +80,24 @@ flowchart LR
 
     Backend -->|Read Write| DB
 ```
+### User flow diagram
+```mermaid
+flowchart TD
+    Start([Start])
 
+    MapSelection([Select Region on Map])
+    TimeSelection([Select Time Period])
+    ShowResults([Display Events & Characters *characters not implemented yet*])
+
+    End([End])
+
+    Start --> MapSelection
+    MapSelection --> TimeSelection
+    TimeSelection --> ShowResults
+    ShowResults --> End
+
+
+```
 ---
 
 ## Internal System Workflow
