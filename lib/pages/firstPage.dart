@@ -10,11 +10,20 @@ class FirstPage extends StatelessWidget {
         backgroundColor: Colors.brown);
   }
 
-  ElevatedButton _elevatedButton(String childText){
+  ElevatedButton _elevatedButtonWithIsolates(){
     return ElevatedButton(
       onPressed:(){},
       style: ElevatedButton.styleFrom(backgroundColor: Colors.brown),
-      child: Text(childText, style: TextStyle(color: Colors.white),
+      child: Text('With Isolates', style: TextStyle(color: Colors.white),
+      ),
+    );
+  }
+
+  ElevatedButton _elevatedButtonNoIsolates(){
+    return ElevatedButton(
+      onPressed:(){},
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.brown),
+      child: Text('No Isolates', style: TextStyle(color: Colors.white),
       ),
     );
   }
@@ -28,9 +37,9 @@ class FirstPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            _elevatedButton('No Isolates'),
+            _elevatedButtonNoIsolates(),
             const SizedBox(width: 10),
-            _elevatedButton('With Isolates'),
+            _elevatedButtonWithIsolates(),
           ],
         ),
       )
