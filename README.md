@@ -20,6 +20,7 @@
 ## App Description
 Users explore content by selecting a geographical region on an interactive map and a corresponding time period, after which relevant historical events and characters are presented
 
+
 ---
 
 ## Concept Deep Dive: Isolates & Asynch queues
@@ -49,7 +50,7 @@ Users explore content by selecting a geographical region on an interactive map a
 
  While its powerful, unfortunately this comes at the cost of **ressources** as each isolate has its own memory, so its pretty expensive ressource wise, adding to that,it may increase complexity, as the only way two isolates can communicate is via sendPort and ReceivePort
 
-
+[Back To The Top](#app-description)
 
 --- 
 
@@ -61,6 +62,7 @@ The client is responsible for user interaction and data presentation, while the 
 
 The client communicates with the backend to request data, and the backend responds by providing the relevant records from the database. This architecture ensures a clear separation between presentation, data processing, and data management layers
 
+[Back To The Top](#app-description)
 ---
 
 ## Architecture Diagrams
@@ -98,6 +100,8 @@ flowchart TD
 
 
 ```
+
+[Back To The Top](#app-description)
 ---
 
 ## Internal System Workflow
@@ -113,11 +117,11 @@ The required data was initially provided through two CSV files. Custom django sc
 Data retrieval is performed through django queries based on specific criteria, ex:  
 For *event*, filtering is based on country and place name 
 
-
+[Back To The Top](#app-description)
 ---
 
 ## Applying The Isolates Concept in the Implementation
-
+[Back To The Top](#app-description)
 --- 
 
 
@@ -130,7 +134,7 @@ For *event*, filtering is based on country and place name
  The application uses **OpenStreetMap** instead of proprietary map solutions (aka google maps), this decision was taken due to the need for an open-source, cost-free mapping solution along with geolocator to get the location of the user
 
 
-
+[Back To The Top](#app-description)
 ---
 
 
@@ -153,14 +157,14 @@ OR build APK
 ```cmd
 flutter build apk --release
 ```
-
+[Back To The Top](#app-description)
 ---
 
 ## License
 
 
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#app-description)
 
 ---
 
