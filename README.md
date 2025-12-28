@@ -135,7 +135,24 @@ For *event*, filtering is based on country and place name
 
 
 ## Setup Instructions
+### Clone the repository
+```cmd
+git clone https: //github.com/yourusername/your-repo.git
+cd your-repo
+```
+### Install dependencies
+```cmd 
+flutter pub get
+```
 
+### Run on connected device
+``` cmd
+flutter run
+```
+OR build APK
+```cmd
+flutter build apk --release
+```
 
 ---
 
