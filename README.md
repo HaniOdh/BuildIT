@@ -62,7 +62,7 @@ The client is responsible for user interaction and data presentation, while the 
 
 The client communicates with the backend to request data, and the backend responds by providing the relevant records from the database. This architecture ensures a clear separation between presentation, data processing, and data management layers
 
-[Back To The Top](#app-description)
+
 ---
 
 ## Architecture Diagrams
@@ -100,7 +100,7 @@ flowchart TD
 
 
 ```
-[Back To The Top](#app-description)
+
 ---
 
 ## Internal System Workflow
@@ -116,11 +116,11 @@ The required data was initially provided through two CSV files. Custom django sc
 Data retrieval is performed through django queries based on specific criteria, ex:  
 For *event*, filtering is based on country and place name 
 
-[Back To The Top](#app-description)
+
 ---
 
 ## Applying The Isolates Concept in the Implementation
-[Back To The Top](#app-description)
+
 --- 
 
 
@@ -133,7 +133,7 @@ For *event*, filtering is based on country and place name
   The application uses **OpenStreetMap** instead of proprietary map solutions (aka google maps), this decision was taken due to the   need for an open-source, cost-free mapping solution along with geolocator to get the location of the user
 
 
-[Back To The Top](#app-description)
+
 ---
 
 
@@ -157,7 +157,7 @@ For *event*, filtering is based on country and place name
  flutter build apk --release
  ```
 
- [Back To The Top](#app-description)
+
 ---
 
 ## License
