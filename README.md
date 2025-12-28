@@ -70,6 +70,14 @@
 
 
 ## Design Decisions and Trade-offs
+ ### UI Design System
+ We adopted **Material 3** as the base design system (a google's design system) to ensure visual consistency and alignment with modern android design guidelines. However, relying only on predefined components limited flexibility for certain interaction patterns.To address this, we combined material 3 components with custom flutter widgets, allowing us to preserve design coherence while tailoring specific UI elements to the application's functional needs
+ The trade-off here was an increase in UI implementation complexity in exchange for better control over user experience
+
+ ### Map provider Selection
+ The application uses **OpenStreetMap** instead of proprietary map solutions (aka google maps), this decision was taken due to the need for an open-source, cost-free mapping solution along with geolocator to get the location of the user
+
+
 
 ---
 
