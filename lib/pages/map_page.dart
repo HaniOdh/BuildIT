@@ -10,21 +10,27 @@ class MapPage extends StatefulWidget {
 }
 
 class _MapPageState extends State<MapPage> {
+  final MapController _mapController = MapController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Map'),
       ),
-      body: content(),
+      body: Stack(
+        children: [
+          map(),
+        ],
+      ),
     );
   }
 
-  Widget content(){
+  Widget map(){
     return FlutterMap(
         options: MapOptions(
             initialCenter: LatLng(35.4358300, 7.1433300),
-            initialZoom: 11,
+            initialZoom: 3.2,
             interactionOptions:
               const InteractionOptions(
                   flags: InteractiveFlag.doubleTapZoom |
