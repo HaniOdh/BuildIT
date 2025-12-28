@@ -100,7 +100,6 @@ flowchart TD
 
 
 ```
-
 [Back To The Top](#app-description)
 ---
 
@@ -126,12 +125,12 @@ For *event*, filtering is based on country and place name
 
 
 ## Design Decisions and Trade-offs
- ### UI Design System
- We adopted **Material 3** as the base design system (a google's design system) to ensure visual consistency and alignment with modern android design guidelines. However, relying only on predefined components limited flexibility for certain interaction patterns.To address this, we combined material 3 components with custom flutter widgets, allowing us to preserve design coherence while tailoring specific UI elements to the application's functional needs
- The trade-off here was an increase in UI implementation complexity in exchange for better control over user experience
-
- ### Map provider Selection
- The application uses **OpenStreetMap** instead of proprietary map solutions (aka google maps), this decision was taken due to the need for an open-source, cost-free mapping solution along with geolocator to get the location of the user
+  ### UI Design System
+  We adopted **Material 3** as the base design system (a google's design system) to ensure visual consistency and alignment with modern android design guidelines. However, relying only on predefined components limited flexibility for certain interaction patterns.To address this, we combined material 3 components with custom flutter widgets, allowing us to preserve design coherence while tailoring specific UI elements to the application's functional needs
+  The trade-off here was an increase in UI implementation complexity in exchange for better control over user experience
+ 
+  ### Map provider Selection
+  The application uses **OpenStreetMap** instead of proprietary map solutions (aka google maps), this decision was taken due to the   need for an open-source, cost-free mapping solution along with geolocator to get the location of the user
 
 
 [Back To The Top](#app-description)
@@ -140,24 +139,25 @@ For *event*, filtering is based on country and place name
 
 ## Setup Instructions
 ### Clone the repository
-```cmd
-git clone https: //github.com/yourusername/your-repo.git
-cd your-repo
-```
-### Install dependencies
-```cmd 
-flutter pub get
-```
+ ```cmd
+ git clone https: //github.com/yourusername/your-repo.git
+ cd your-repo
+ ```
+ ### Install dependencies
+ ```cmd 
+ flutter pub get
+ ```
+ 
+ ### Run on connected device
+ ``` cmd
+ flutter run
+ ```
+ OR build APK
+ ```cmd
+ flutter build apk --release
+ ```
 
-### Run on connected device
-``` cmd
-flutter run
-```
-OR build APK
-```cmd
-flutter build apk --release
-```
-[Back To The Top](#app-description)
+ [Back To The Top](#app-description)
 ---
 
 ## License
