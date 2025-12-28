@@ -61,6 +61,18 @@
 ---
 
 ## Internal System Workflow
+### Backend Data Modeling and Data Ingestion :
+The backend was implemented using **Django** and is responsible for managing the app's data
+
+Two main models were created : 
+- **Event**
+- **Person**
+
+The required data was initially provided through two CSV files. Custom django scripts were created to parse these files and directly instantiate model objects. By leveraging django's ORM, these objects were automatically stored in the database
+
+Data retrieval is performed through django queries based on specific criteria, ex:  
+For *event*, filtering is based on country and place name 
+
 
 ---
 
