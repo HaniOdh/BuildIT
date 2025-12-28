@@ -1,4 +1,4 @@
-# the_history_app
+# hisstoriapp
 
 A new Flutter project.
 

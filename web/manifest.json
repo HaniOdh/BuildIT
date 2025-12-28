@@ -1,6 +1,6 @@
 {
-    "name": "the_history_app",
-    "short_name": "the_history_app",
+    "name": "hisstoriapp",
+    "short_name": "hisstoriapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
