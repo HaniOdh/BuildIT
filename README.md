@@ -121,6 +121,8 @@ For *event*, filtering is based on country and place name
 
 ## Applying The Isolates Concept in the Implementation
 
+we didnt have time to mention that here but it was implemented 
+
 --- 
 
 
